@@ -1,0 +1,877 @@
+body {
+  margin: 0 auto;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+
+
+  nav {
+    height: 100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    line-height: 100px;
+    z-index:10;
+    top: 0;
+
+    .brand {
+      float: left;
+
+      .first-child {
+        color: #303131;
+        font-size: 22px;
+        padding: 0 10px;
+        text-decoration: none;
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-property: color;
+        transition-duration: 0.5s;
+
+        &:hover {
+          color: #8B98A7;
+          background: none;
+        }
+        &:active {
+          color: #8B98A7;
+        }
+      }
+    }
+
+    .navbar {
+      float: right;
+
+      .nav {
+        color: #303131;
+        text-decoration: none;
+        padding: 0 20px;
+        text-align: center;
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-property: color;
+        transition-duration: 0.5s;
+
+
+        &:hover {
+          color: #8B98A7;
+          border-bottom: 1px solid #fff;
+          background: none;
+
+        }
+
+        &:active {
+          color: #8B98A7;
+          border-bottom: 1px solid #fff;
+          background: none;
+        }
+      }
+      .icon {
+        display: none;
+      }
+    }
+  }
+
+
+  #hero {
+    background: url('Images/hero1.jpg') no-repeat center fixed;
+    width: 100%;
+    min-height: 600px;
+    background-size: cover;
+
+    .content {
+      color: #fff;
+      margin: auto;
+      text-align: center;
+      padding-top: 180px;
+
+      h1 {
+        font-size: 65px;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+      }
+
+      h3 {
+        letter-spacing: 3px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        padding: 7px 16px;
+        border: 1px solid #fff;
+        transition: background-color 0.5s ease;
+
+
+        &:hover {
+          background-color: rgba(139, 152, 167, 0.6);
+          border: 1px solid rgba(139, 152, 167, 0.4);
+        }
+      }
+    }
+  }
+
+  #about {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+
+    .image {
+      background: url('Images/About.jpg') no-repeat center;
+      width: 50%;
+      min-height: 800px;
+      background-size: cover;
+      float: left;
+    }
+    .about-me {
+      float:left;
+      width: 50%;
+      height:800px;
+      background-color: #eee;
+
+      .left {
+        text-align: left;
+        padding: 100px 50px 50px 50px;
+
+        h1 {
+          font-size: 45px;
+          font-weight: normal;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-weight: normal;
+        }
+
+        p {
+          line-height: 1.75;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  #contacts {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+
+    .image {
+      background: url('Images/brooke-lark-230642.jpg') no-repeat center;
+      width: 50%;
+      min-height: 800px;
+      background-size: cover;
+      float: left;
+    }
+
+    .get-in-touch {
+      float:left;
+      width: 50%;
+      height:800px;
+      background-color: #eee;
+
+      .left {
+        text-align: left;
+        padding: 80px 50px 50px 50px;
+
+        h1 {
+          font-size: 45px;
+          font-weight: normal;
+        }
+
+        p {
+          line-height: 1.75;
+          font-size: 16px;
+        }
+
+        input, textarea {
+          width: 75%;
+          background-color: #eee;
+          margin-bottom: 10px;
+          border: 1px solid #303131;
+          font-size: 16px;
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          padding: 7px;
+          resize: none;
+          }
+
+        textarea {
+          height: 100px;
+        }
+        }
+      ::-webkit-input-placeholder {
+        color: #303131;
+      }
+      :-moz-placeholder {
+        color: #303131;
+        opacity: 1;
+      }
+      ::-moz-placeholder {
+        color: #303131;
+        opacity: 1;
+      }
+      :-ms-input-placeholder {
+        color: #303131;
+      }
+      :-ms-input-placeholder {
+        color: #303131;
+      }
+
+      button {
+        border: none;
+        background: none;
+        font-size: 16px;
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-property: color;
+        transition-duration: 0.5s;
+
+        &:hover {
+          color: #8B98A7;
+
+          background: none;
+        }
+      }
+    }
+  }
+  .map {
+    text-align: center;
+    margin: 50px;
+    font-size: 28px;
+  }
+  #map {
+    height: 400px;
+    width: 90%;
+    margin: auto;
+  }
+  footer {
+    height: 105px;
+    text-align: center;
+
+    .social {
+      display: inline-block;
+      position: relative;
+      margin: 15px 10px;
+
+      &:hover {
+        .social-icon {
+          color: #8B98A7;
+          background-color: #fff;
+          .social-text {
+            opacity: 1;
+            visibility: visible;
+            z-index: 999;
+          }
+          .social-text-right {
+            left: 100%;
+          }
+        }
+      }
+
+      .social-icon {
+        -o-transition: color .5s linear, background .5s linear;
+        -ms-transition: color .5s linear, background .5s linear;
+        -moz-transition: color .5s linear, background .5s linear;
+        -webkit-transition: color .5s linear, background .5s linear;
+        position: relative;
+        padding: 8px 12px;
+        color: #303131;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+
+        .social-text {
+          visibility: hidden;
+          opacity: 0;
+          color: #8B98A7;
+          background-color: #fff;
+          position: absolute;
+          white-space: nowrap;
+          font-size: 17px;
+          top: 0;
+          line-height: 22px;
+          padding-top: 12px;
+
+          -o-transition: right .5s linear, left .5s linear, opacity .5s linear;
+          -ms-transition: right .5s linear, left .5s linear, opacity .5s linear;
+          -moz-transition: right .5s linear, left .5s linear, opacity .5s linear;
+          -webkit-transition: right .5s linear, left .5s linear, opacity .5s linear;
+        }
+        .social-text-left {
+          Right: 50%;
+        }
+      }
+      .rounded-left {
+        -moz-border-radius: 3px 0 0 3px;
+        -ms-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+        -o-border-radius: 3px 0 0 3px;
+      }
+      .rounded-right {
+        -moz-border-radius: 0px 3px 3px 0px;
+        -ms-border-radius: 0px 3px 3px 0px;
+        -webkit-border-radius: 0px 3px 3px 0px;
+        -o-border-radius: 0px 3px 3px 0px;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+  }
+
+
+  #portfolio {
+    margin: 0 30px;
+
+    div {
+      width: 100%;
+      display: inline-block;
+      list-style-type: none;
+
+
+      .portfolio {
+        height: 700px;
+        display: flex;
+
+
+        .first {
+          background: url(Images/brooke-lark-158019.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;
+
+          div {
+            text-align: center;
+            h1 {
+              color: #fff;
+              padding-top: 80px;
+              font-weight: normal;
+              font-size: 40px;
+            }
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              padding: 7px 25px;
+              border: 1px solid #fff;
+              transition: background-color 0.5s ease;
+
+              &:hover {
+                background-color: rgba(139, 152, 167, 0.6);
+                border: 1px solid rgba(139, 152, 167, 0.4);
+              }
+            }
+          }
+        }
+        .second {
+          background: url(Images/maria-mekht-159066.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;
+
+          div {
+            text-align: center;
+            h1 {
+              color: #fff;
+              padding-top: 80px;
+              font-weight: normal;
+              font-size: 40px;
+            }
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              padding: 7px 25px;
+              border: 1px solid #fff;
+              transition: background-color 0.5s ease;
+
+              &:hover {
+                background-color: rgba(139, 152, 167, 0.6);
+                border: 1px solid rgba(139, 152, 167, 0.4);
+              }
+            }
+          }
+        }
+        .third {
+          background: url(Images/cala-150730.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+
+          h1 {
+            color: #fff;
+            text-align: center;
+            padding-top: 80px;
+            font-weight: normal;
+            font-size: 40px;
+          }
+          div {
+            text-align: center;
+            h1 {
+              color: #fff;
+              padding-top: 80px;
+              font-weight: normal;
+              font-size: 40px;
+            }
+
+            a {
+              text-decoration: none;
+              color: #fff;
+              padding: 7px 25px;
+              border: 1px solid #fff;
+              transition: background-color 0.5s ease;
+
+              &:hover {
+                background-color: rgba(139, 152, 167, 0.6);
+                border: 1px solid rgba(139, 152, 167, 0.4);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #blog {
+    margin: 0 50px;
+
+    div {
+      width: 100%;
+      display: block;
+      position: relative;
+      list-style-type: none;
+      margin-bottom: 16px;
+
+      .flexible {
+        height: 364px;
+        display: flex;
+
+        .first-side {
+
+
+          .relative {
+            position: relative;
+            height: 100%;
+
+            .photo {
+              background: url(Images/brooke-lark-385504.jpg) no-repeat 50%;
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
+            }
+            .photo1 {
+              background: url(Images/brooke-lark-331981.jpg) no-repeat 50%;
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
+            }
+            .photo2 {
+              background: url(Images/photo2.jpg) no-repeat 50%;
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
+            }
+            .photo3 {
+              background: url(Images/photo3.jpg) no-repeat 50%;
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
+            }
+            .photo4 {
+              background: url(Images/photo4.jpg) no-repeat 50%;
+              background-size: cover;
+              width: 100%;
+              height: 100%;
+              vertical-align: middle;
+            }
+          }
+        }
+        .second-side {
+          background: #eee;
+
+          .second-relative {
+            position: relative;
+
+            .text {
+
+              div {
+                margin-top: 60px;
+                a {
+                  text-decoration: none;
+                  font-size: 14px;
+                  line-height: 1.8;
+                  text-align: center;
+                  color: #303131;
+
+                  p {
+                    padding: 0 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #images {
+    margin: 0 30px;
+
+    div {
+      width: 100%;
+      display: inline-block;
+      list-style-type: none;
+
+      .portfolio {
+        height: 360px;
+        margin-bottom: 20px;
+        display: flex;
+
+        .first {
+          background: url(Images/brenda-godinez-228181.jpg) no-repeat center;
+          background-size: cover;
+          width: 130%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+
+          div {
+            transition: .5s ease;
+            opacity: 0;
+
+
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+        .second {
+          background: url(Images/brooke-lark-331981.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+
+          div {
+            transition: .5s ease;
+            opacity: 0;
+
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+        .third {
+          background: url(Images/brooke-lark-209708.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+
+          div {
+            transition: .5s ease;
+            opacity: 0;
+
+
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+        .fourth {
+          background: url(Images/brenda-godinez-227278.jpg) no-repeat center;
+          background-size: cover;
+          width: 140%;
+          height: 100%;
+          vertical-align: middle;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+
+          div {
+            transition: .5s ease;
+            opacity: 0;
+
+
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+        .fifth {
+          background: url(Images/yoori-koo-51884.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+          div {
+            transition: .5s ease;
+            opacity: 0;
+
+
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+        .last {
+          background: url(Images/toa-heftiba-288434.jpg) no-repeat center;
+          background-size: cover;
+          width: 110%;
+          height: 100%;
+          vertical-align: middle;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden;
+          div {
+            transition: .5s ease;
+            opacity: 0;
+
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+          &:hover {
+            opacity: 0.3;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about-me {
+    height: 900px !important;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .about-me {
+    height: 700px !important;
+    overflow-y: auto;
+  }
+
+  .contacts {
+    .get-in-touch {
+      height: 750px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .icon {
+    float: right;
+    display: block !important;
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  .nav {
+    display: none;
+  }
+
+  .responsive {
+    position: relative;
+
+    .navbar {
+      width: 100%;
+      background: #fff;
+    }
+    .nav {
+      float: none;
+      display: block;
+      padding: 0 !important;
+      line-height: 5;
+
+    }
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 30px;
+    }
+  }
+  .content {
+    padding: 100px !important;
+  }
+
+  #about {
+    .image {
+      width: 100% !important;
+      min-height: 400px !important;
+    }
+    .about-me {
+      width: 100% !important;
+      height: 600px !important;
+
+      .left {
+        padding: 30px !important;
+      }
+    }
+  }
+  #contacts {
+    .image {
+      width: 100% !important;
+      min-height: 400px !important;
+    }
+    .get-in-touch {
+      width: 100% !important;
+      height: 750px !important;
+
+      .left {
+        padding: 30px !important;
+
+        input, textarea {
+          width: 95% !important;
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    min-height: 980px !important;
+
+    div {
+      height: 300px !important;
+
+      .portfolio {
+        display: inline-block !important;
+
+        .first {
+          margin-right: 0 !important;
+          margin-bottom: 30px !important;
+        }
+
+        .second {
+          margin-right: 0 !important;
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+  }
+
+  #images {
+
+    div {
+     height: 300px !important;
+      margin-bottom: 30px;
+
+      .portfolio {
+        display: inline-block !important;
+        margin-bottom: 0 !important;
+
+        .first {
+          margin-right: 0 !important;
+          margin-bottom: 30px;
+          width: 100% !important;
+        }
+
+        .third {
+          margin-bottom: 30px;
+        }
+        .fourth {
+          width: 100% !important;
+        }
+
+        .fifth {
+          margin-bottom: 30px;
+          margin-right: 0 !important;
+        }
+
+        .last {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  #blog {
+
+    div {
+      margin-bottom: 0 !important;
+      display: inline-block !important;
+
+      .flexible {
+        height: 100% !important;
+
+        .first-side {
+          max-width: 100% !important;
+          height: 300px !important;
+        }
+
+        .second-side {
+          padding: 0 !important;
+          margin-bottom: 30px !important;
+          max-width: none !important;
+
+          .text {
+            margin-top: 15px !important;
+            margin-bottom: 15px !important;
+
+            div {
+              margin-top: 0!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

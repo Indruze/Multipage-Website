@@ -1,0 +1,590 @@
+body {
+  margin: 0 auto;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+  body nav {
+    height: 100px;
+    width: 100%;
+    background: white;
+    line-height: 100px;
+    z-index: 10;
+    top: 0; }
+    body nav .brand {
+      float: left; }
+      body nav .brand .first-child {
+        color: #303131;
+        font-size: 22px;
+        padding: 0 10px;
+        text-decoration: none;
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-property: color;
+        transition-duration: 0.5s; }
+        body nav .brand .first-child:hover {
+          color: #8B98A7;
+          background: none; }
+        body nav .brand .first-child:active {
+          color: #8B98A7; }
+    body nav .navbar {
+      float: right; }
+      body nav .navbar .nav {
+        color: #303131;
+        text-decoration: none;
+        padding: 0 20px;
+        text-align: center;
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-property: color;
+        transition-duration: 0.5s; }
+        body nav .navbar .nav:hover {
+          color: #8B98A7;
+          border-bottom: 1px solid #fff;
+          background: none; }
+        body nav .navbar .nav:active {
+          color: #8B98A7;
+          border-bottom: 1px solid #fff;
+          background: none; }
+      body nav .navbar .icon {
+        display: none; }
+  body #hero {
+    background: url("Images/hero1.jpg") no-repeat center fixed;
+    width: 100%;
+    min-height: 600px;
+    background-size: cover; }
+    body #hero .content {
+      color: #fff;
+      margin: auto;
+      text-align: center;
+      padding-top: 180px; }
+      body #hero .content h1 {
+        font-size: 65px;
+        font-weight: normal;
+        letter-spacing: 0.1em; }
+      body #hero .content h3 {
+        letter-spacing: 3px; }
+      body #hero .content a {
+        text-decoration: none;
+        color: #fff;
+        padding: 7px 16px;
+        border: 1px solid #fff;
+        transition: background-color 0.5s ease; }
+        body #hero .content a:hover {
+          background-color: rgba(139, 152, 167, 0.6);
+          border: 1px solid rgba(139, 152, 167, 0.4); }
+  body #about {
+    width: 90%;
+    overflow: hidden;
+    margin: auto; }
+    body #about .image {
+      background: url("Images/About.jpg") no-repeat center;
+      width: 50%;
+      min-height: 800px;
+      background-size: cover;
+      float: left; }
+    body #about .about-me {
+      float: left;
+      width: 50%;
+      height: 800px;
+      background-color: #eee; }
+      body #about .about-me .left {
+        text-align: left;
+        padding: 100px 50px 50px 50px; }
+        body #about .about-me .left h1 {
+          font-size: 45px;
+          font-weight: normal; }
+        body #about .about-me .left h4 {
+          font-size: 18px;
+          font-weight: normal; }
+        body #about .about-me .left p {
+          line-height: 1.75;
+          font-size: 15px; }
+  body #contacts {
+    width: 90%;
+    overflow: hidden;
+    margin: auto; }
+    body #contacts .image {
+      background: url("Images/brooke-lark-230642.jpg") no-repeat center;
+      width: 50%;
+      min-height: 800px;
+      background-size: cover;
+      float: left; }
+    body #contacts .get-in-touch {
+      float: left;
+      width: 50%;
+      height: 800px;
+      background-color: #eee; }
+      body #contacts .get-in-touch .left {
+        text-align: left;
+        padding: 80px 50px 50px 50px; }
+        body #contacts .get-in-touch .left h1 {
+          font-size: 45px;
+          font-weight: normal; }
+        body #contacts .get-in-touch .left p {
+          line-height: 1.75;
+          font-size: 16px; }
+        body #contacts .get-in-touch .left input, body #contacts .get-in-touch .left textarea {
+          width: 75%;
+          background-color: #eee;
+          margin-bottom: 10px;
+          border: 1px solid #303131;
+          font-size: 16px;
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          padding: 7px;
+          resize: none; }
+        body #contacts .get-in-touch .left textarea {
+          height: 100px; }
+      body #contacts .get-in-touch ::-webkit-input-placeholder {
+        color: #303131; }
+      body #contacts .get-in-touch :-moz-placeholder {
+        color: #303131;
+        opacity: 1; }
+      body #contacts .get-in-touch ::-moz-placeholder {
+        color: #303131;
+        opacity: 1; }
+      body #contacts .get-in-touch :-ms-input-placeholder {
+        color: #303131; }
+      body #contacts .get-in-touch :-ms-input-placeholder {
+        color: #303131; }
+      body #contacts .get-in-touch button {
+        border: none;
+        background: none;
+        font-size: 16px;
+        -webkit-transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-property: color;
+        transition-duration: 0.5s; }
+        body #contacts .get-in-touch button:hover {
+          color: #8B98A7;
+          background: none; }
+  body .map {
+    text-align: center;
+    margin: 50px;
+    font-size: 28px; }
+  body #map {
+    height: 400px;
+    width: 90%;
+    margin: auto; }
+  body footer {
+    height: 105px;
+    text-align: center; }
+    body footer .social {
+      display: inline-block;
+      position: relative;
+      margin: 15px 10px; }
+      body footer .social:hover .social-icon {
+        color: #8B98A7;
+        background-color: #fff; }
+        body footer .social:hover .social-icon .social-text {
+          opacity: 1;
+          visibility: visible;
+          z-index: 999; }
+        body footer .social:hover .social-icon .social-text-right {
+          left: 100%; }
+      body footer .social .social-icon {
+        -o-transition: color .5s linear, background .5s linear;
+        -ms-transition: color .5s linear, background .5s linear;
+        -moz-transition: color .5s linear, background .5s linear;
+        -webkit-transition: color .5s linear, background .5s linear;
+        position: relative;
+        padding: 8px 12px;
+        color: #303131;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px; }
+        body footer .social .social-icon .social-text {
+          visibility: hidden;
+          opacity: 0;
+          color: #8B98A7;
+          background-color: #fff;
+          position: absolute;
+          white-space: nowrap;
+          font-size: 17px;
+          top: 0;
+          line-height: 22px;
+          padding-top: 12px;
+          -o-transition: right .5s linear, left .5s linear, opacity .5s linear;
+          -ms-transition: right .5s linear, left .5s linear, opacity .5s linear;
+          -moz-transition: right .5s linear, left .5s linear, opacity .5s linear;
+          -webkit-transition: right .5s linear, left .5s linear, opacity .5s linear; }
+        body footer .social .social-icon .social-text-left {
+          Right: 50%; }
+      body footer .social .rounded-left {
+        -moz-border-radius: 3px 0 0 3px;
+        -ms-border-radius: 3px 0 0 3px;
+        -webkit-border-radius: 3px 0 0 3px;
+        -o-border-radius: 3px 0 0 3px; }
+      body footer .social .rounded-right {
+        -moz-border-radius: 0px 3px 3px 0px;
+        -ms-border-radius: 0px 3px 3px 0px;
+        -webkit-border-radius: 0px 3px 3px 0px;
+        -o-border-radius: 0px 3px 3px 0px; }
+    body footer p {
+      margin-top: 0;
+      margin-bottom: 5px; }
+  body #portfolio {
+    margin: 0 30px; }
+    body #portfolio div {
+      width: 100%;
+      display: inline-block;
+      list-style-type: none; }
+      body #portfolio div .portfolio {
+        height: 700px;
+        display: flex; }
+        body #portfolio div .portfolio .first {
+          background: url(Images/brooke-lark-158019.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px; }
+          body #portfolio div .portfolio .first div {
+            text-align: center; }
+            body #portfolio div .portfolio .first div h1 {
+              color: #fff;
+              padding-top: 80px;
+              font-weight: normal;
+              font-size: 40px; }
+            body #portfolio div .portfolio .first div a {
+              text-decoration: none;
+              color: #fff;
+              padding: 7px 25px;
+              border: 1px solid #fff;
+              transition: background-color 0.5s ease; }
+              body #portfolio div .portfolio .first div a:hover {
+                background-color: rgba(139, 152, 167, 0.6);
+                border: 1px solid rgba(139, 152, 167, 0.4); }
+        body #portfolio div .portfolio .second {
+          background: url(Images/maria-mekht-159066.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px; }
+          body #portfolio div .portfolio .second div {
+            text-align: center; }
+            body #portfolio div .portfolio .second div h1 {
+              color: #fff;
+              padding-top: 80px;
+              font-weight: normal;
+              font-size: 40px; }
+            body #portfolio div .portfolio .second div a {
+              text-decoration: none;
+              color: #fff;
+              padding: 7px 25px;
+              border: 1px solid #fff;
+              transition: background-color 0.5s ease; }
+              body #portfolio div .portfolio .second div a:hover {
+                background-color: rgba(139, 152, 167, 0.6);
+                border: 1px solid rgba(139, 152, 167, 0.4); }
+        body #portfolio div .portfolio .third {
+          background: url(Images/cala-150730.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle; }
+          body #portfolio div .portfolio .third h1 {
+            color: #fff;
+            text-align: center;
+            padding-top: 80px;
+            font-weight: normal;
+            font-size: 40px; }
+          body #portfolio div .portfolio .third div {
+            text-align: center; }
+            body #portfolio div .portfolio .third div h1 {
+              color: #fff;
+              padding-top: 80px;
+              font-weight: normal;
+              font-size: 40px; }
+            body #portfolio div .portfolio .third div a {
+              text-decoration: none;
+              color: #fff;
+              padding: 7px 25px;
+              border: 1px solid #fff;
+              transition: background-color 0.5s ease; }
+              body #portfolio div .portfolio .third div a:hover {
+                background-color: rgba(139, 152, 167, 0.6);
+                border: 1px solid rgba(139, 152, 167, 0.4); }
+  body #blog {
+    margin: 0 50px; }
+    body #blog div {
+      width: 100%;
+      display: block;
+      position: relative;
+      list-style-type: none;
+      margin-bottom: 16px; }
+      body #blog div .flexible {
+        height: 364px;
+        display: flex; }
+        body #blog div .flexible .first-side .relative {
+          position: relative;
+          height: 100%; }
+          body #blog div .flexible .first-side .relative .photo {
+            background: url(Images/brooke-lark-385504.jpg) no-repeat 50%;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle; }
+          body #blog div .flexible .first-side .relative .photo1 {
+            background: url(Images/brooke-lark-331981.jpg) no-repeat 50%;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle; }
+          body #blog div .flexible .first-side .relative .photo2 {
+            background: url(Images/photo2.jpg) no-repeat 50%;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle; }
+          body #blog div .flexible .first-side .relative .photo3 {
+            background: url(Images/photo3.jpg) no-repeat 50%;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle; }
+          body #blog div .flexible .first-side .relative .photo4 {
+            background: url(Images/photo4.jpg) no-repeat 50%;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle; }
+        body #blog div .flexible .second-side {
+          background: #eee; }
+          body #blog div .flexible .second-side .second-relative {
+            position: relative; }
+            body #blog div .flexible .second-side .second-relative .text div {
+              margin-top: 60px; }
+              body #blog div .flexible .second-side .second-relative .text div a {
+                text-decoration: none;
+                font-size: 14px;
+                line-height: 1.8;
+                text-align: center;
+                color: #303131; }
+                body #blog div .flexible .second-side .second-relative .text div a p {
+                  padding: 0 20px; }
+  body #images {
+    margin: 0 30px; }
+    body #images div {
+      width: 100%;
+      display: inline-block;
+      list-style-type: none; }
+      body #images div .portfolio {
+        height: 360px;
+        margin-bottom: 20px;
+        display: flex; }
+        body #images div .portfolio .first {
+          background: url(Images/brenda-godinez-228181.jpg) no-repeat center;
+          background-size: cover;
+          width: 130%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden; }
+          body #images div .portfolio .first div {
+            transition: .5s ease;
+            opacity: 0; }
+            body #images div .portfolio .first div:hover {
+              opacity: 1; }
+          body #images div .portfolio .first:hover {
+            opacity: 0.3; }
+        body #images div .portfolio .second {
+          background: url(Images/brooke-lark-331981.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden; }
+          body #images div .portfolio .second div {
+            transition: .5s ease;
+            opacity: 0; }
+            body #images div .portfolio .second div:hover {
+              opacity: 1; }
+          body #images div .portfolio .second:hover {
+            opacity: 0.3; }
+        body #images div .portfolio .third {
+          background: url(Images/brooke-lark-209708.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden; }
+          body #images div .portfolio .third div {
+            transition: .5s ease;
+            opacity: 0; }
+            body #images div .portfolio .third div:hover {
+              opacity: 1; }
+          body #images div .portfolio .third:hover {
+            opacity: 0.3; }
+        body #images div .portfolio .fourth {
+          background: url(Images/brenda-godinez-227278.jpg) no-repeat center;
+          background-size: cover;
+          width: 140%;
+          height: 100%;
+          vertical-align: middle;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden; }
+          body #images div .portfolio .fourth div {
+            transition: .5s ease;
+            opacity: 0; }
+            body #images div .portfolio .fourth div:hover {
+              opacity: 1; }
+          body #images div .portfolio .fourth:hover {
+            opacity: 0.3; }
+        body #images div .portfolio .fifth {
+          background: url(Images/yoori-koo-51884.jpg) no-repeat center;
+          background-size: cover;
+          width: 100%;
+          height: 100%;
+          vertical-align: middle;
+          margin-right: 20px;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden; }
+          body #images div .portfolio .fifth div {
+            transition: .5s ease;
+            opacity: 0; }
+            body #images div .portfolio .fifth div:hover {
+              opacity: 1; }
+          body #images div .portfolio .fifth:hover {
+            opacity: 0.3; }
+        body #images div .portfolio .last {
+          background: url(Images/toa-heftiba-288434.jpg) no-repeat center;
+          background-size: cover;
+          width: 110%;
+          height: 100%;
+          vertical-align: middle;
+          opacity: 1;
+          display: block;
+          transition: .5s ease;
+          backface-visibility: hidden; }
+          body #images div .portfolio .last div {
+            transition: .5s ease;
+            opacity: 0; }
+            body #images div .portfolio .last div:hover {
+              opacity: 1; }
+          body #images div .portfolio .last:hover {
+            opacity: 0.3; }
+
+@media screen and (max-width: 420px) {
+  .about-me {
+    height: 900px !important; } }
+@media screen and (max-width: 520px) {
+  .about-me {
+    height: 700px !important;
+    overflow-y: auto; }
+
+  .contacts .get-in-touch {
+    height: 750px !important; } }
+@media screen and (max-width: 800px) {
+  .icon {
+    float: right;
+    display: block !important;
+    font-size: 30px;
+    margin-right: 10px; }
+
+  .nav {
+    display: none; }
+
+  .responsive {
+    position: relative; }
+    .responsive .navbar {
+      width: 100%;
+      background: #fff; }
+    .responsive .nav {
+      float: none;
+      display: block;
+      padding: 0 !important;
+      line-height: 5; }
+    .responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 30px; }
+
+  .content {
+    padding: 100px !important; }
+
+  #about .image {
+    width: 100% !important;
+    min-height: 400px !important; }
+  #about .about-me {
+    width: 100% !important;
+    height: 600px !important; }
+    #about .about-me .left {
+      padding: 30px !important; }
+
+  #contacts .image {
+    width: 100% !important;
+    min-height: 400px !important; }
+  #contacts .get-in-touch {
+    width: 100% !important;
+    height: 750px !important; }
+    #contacts .get-in-touch .left {
+      padding: 30px !important; }
+      #contacts .get-in-touch .left input, #contacts .get-in-touch .left textarea {
+        width: 95% !important; }
+
+  #portfolio {
+    min-height: 980px !important; }
+    #portfolio div {
+      height: 300px !important; }
+      #portfolio div .portfolio {
+        display: inline-block !important; }
+        #portfolio div .portfolio .first {
+          margin-right: 0 !important;
+          margin-bottom: 30px !important; }
+        #portfolio div .portfolio .second {
+          margin-right: 0 !important;
+          margin-bottom: 30px !important; }
+
+  #images div {
+    height: 300px !important;
+    margin-bottom: 30px; }
+    #images div .portfolio {
+      display: inline-block !important;
+      margin-bottom: 0 !important; }
+      #images div .portfolio .first {
+        margin-right: 0 !important;
+        margin-bottom: 30px;
+        width: 100% !important; }
+      #images div .portfolio .third {
+        margin-bottom: 30px; }
+      #images div .portfolio .fourth {
+        width: 100% !important; }
+      #images div .portfolio .fifth {
+        margin-bottom: 30px;
+        margin-right: 0 !important; }
+      #images div .portfolio .last {
+        width: 100% !important; }
+
+  #blog div {
+    margin-bottom: 0 !important;
+    display: inline-block !important; }
+    #blog div .flexible {
+      height: 100% !important; }
+      #blog div .flexible .first-side {
+        max-width: 100% !important;
+        height: 300px !important; }
+      #blog div .flexible .second-side {
+        padding: 0 !important;
+        margin-bottom: 30px !important;
+        max-width: none !important; }
+        #blog div .flexible .second-side .text {
+          margin-top: 15px !important;
+          margin-bottom: 15px !important; }
+          #blog div .flexible .second-side .text div {
+            margin-top: 0 !important; } }
+
+/*# sourceMappingURL=Style.css.map */
